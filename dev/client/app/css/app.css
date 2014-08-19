@@ -1,0 +1,111 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+div.col1 div {
+    background: #FF00ff;
+}
+div.col2 div {
+    background: #ffa100;
+}
+div.col3 div {
+    background: #00fff2;
+}
+div.col4 div {
+    background: #4b00ff;
+}
+html, body, div.ng-scope {
+    height: 100%;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+div.container-fluid > div {
+    height: calc(100% / 4);
+    padding: 4px;
+}
+div.container-fluid > div > div {
+    height: 100%;
+}
+
+div.container-fluid > div:nth-of-type(1) {
+    height: calc(100% / 2);
+    width: calc(100% * 0.4);
+}
+
+/*div.container-fluid > div:nth-of-type(4) {
+    height: calc(100% / 2);
+    width: calc(100% / 3);
+}*/
+
+/*div.container-fluid > div:nth-of-type(5) {
+    position:absolute;
+    left: calc(100%/3);
+    top: calc(100%/4);
+}
+
+div.container-fluid > div:nth-of-type(6) {
+    position:absolute;
+    left: calc(100%/2);
+    top: calc(100%/4);
+}*/
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
